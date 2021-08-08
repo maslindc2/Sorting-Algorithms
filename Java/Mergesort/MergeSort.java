@@ -25,13 +25,14 @@ public class MergeSort {
         for (int j = 0; j < sizeR; ++j)
             R[j] = arr[m + 1 + j];
 
-        /* Merge the temp arrays */
+        
 
         // Initial indexes of first and second sub-arrays
         int i = 0, j = 0;
 
         // Initial index of merged sub-array array
         int k = l;
+        /* Merge the temp arrays */
         while (i < sizeL && j < sizeR) {
             if (L[i] <= R[j]) {
                 arr[k] = L[i];
